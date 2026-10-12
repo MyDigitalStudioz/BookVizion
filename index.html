@@ -420,7 +420,9 @@
     .sample-side strong { font:500 29px/1.1 var(--font-display); margin-bottom:14px; }
     .sample-side p { color:#f1d8cc; }
     .sample-side .btn { background:#fff6e8; color:#612018; border-color:#fff6e8; align-self:flex-start; box-shadow:6px 6px 0 #d2a054; }
-    .concept-note { margin-top:18px; font-size:12px; line-height:1.5; color:#f0d1c4; }
+    .cta-lead { display:flex; flex-wrap:wrap; align-items:center; gap:12px 16px; }
+    .concept-note { margin:0; max-width:36ch; font-size:13px; line-height:1.45; color:var(--ink-soft); }
+    .result-edition { color:var(--ink-soft); font-size:14px; font-weight:600; text-underline-offset:3px; }
     .story-starter { display:grid; grid-template-columns:.72fr 1.28fr; margin-top:28px; background-color:var(--paper-strong); background-image:var(--card-gradient); border:1px solid var(--line-strong); box-shadow:var(--shadow-small); }
     .starter-label { padding:28px 30px; border-right:1px solid var(--line); }
     .starter-label small { display:block; color:var(--red); font-size:10px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; margin-bottom:9px; }
@@ -481,6 +483,8 @@
       h1 { font-size:49px; }
       .hero-copy > p { font-size:17px; }
       .actions { flex-direction:column; align-items:stretch; }
+      .cta-lead { flex-direction:column; align-items:stretch; width:100%; }
+      .concept-note { max-width:none; }
       .btn { width:100%; }
       .book-stage { min-height:450px; }
       .sun-disc { width:340px; height:340px; }
@@ -590,7 +594,7 @@
         <a href="#story">Case study</a>
         <a class="legacy-link" href="#story">Our first book</a>
         <a href="#faq">FAQ</a>
-        <a class="mini-cta" href="#sample">Start your book</a>
+        <a class="mini-cta" href="#sample">Get a free sample</a>
       </nav>
       <button class="theme-toggle" id="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="Switch to dark theme">
         <span class="theme-toggle-label">Light</span>
@@ -606,7 +610,10 @@
         <h1>Anybody's story. Anything imagined. Made into a <em class="aurora-text">real book.</em></h1>
         <p>Bring a voice memo, a document, a PDF—or simply tell us the idea. We shape it into a custom illustrated book, guide you through every approval, then print a copy you can actually hold.</p>
         <div class="actions">
-          <a class="btn btn-primary" href="#sample">Start your book <span aria-hidden="true">→</span></a>
+          <div class="cta-lead">
+            <a class="btn btn-primary" href="#sample">Get a free sample <span aria-hidden="true">→</span></a>
+            <p class="concept-note" id="preview-note">BookVizion is currently a concept preview. Intake is not open yet; this shows the planned offer.</p>
+          </div>
           <a class="btn btn-secondary" href="#process">See how it works</a>
         </div>
       </div>
@@ -664,7 +671,7 @@
             <div class="quiz-step active" data-question="0"><span class="quiz-count">Question 1 of 3</span><h3>First—who are you making this book for?</h3><div class="quiz-answers"><button class="quiz-answer" type="button" data-tier="spark">Someone special—it is a focused, personal gift.</button><button class="quiz-answer" type="button" data-tier="signature">My family—I want something we can share and keep.</button><button class="quiz-answer" type="button" data-tier="studio">A wider audience—the whole production matters.</button></div></div>
             <div class="quiz-step" data-question="1"><span class="quiz-count">Question 2 of 3</span><h3>How much room does the story want?</h3><div class="quiz-answers"><button class="quiz-answer" type="button" data-tier="spark">A crisp beginning, middle, and end.</button><button class="quiz-answer" type="button" data-tier="signature">Enough space for the heart of it to breathe.</button><button class="quiz-answer" type="button" data-tier="studio">A bigger world, more scenes, and more detail.</button></div></div>
             <div class="quiz-step" data-question="2"><span class="quiz-count">Question 3 of 3</span><h3>What matters most when it is finished?</h3><div class="quiz-answers"><button class="quiz-answer" type="button" data-tier="spark">One beautiful copy that makes the idea real.</button><button class="quiz-answer" type="button" data-tier="signature">Hardcovers to share, plus a digital edition.</button><button class="quiz-answer" type="button" data-tier="studio">The fullest keepsake—with copies and read-aloud audio.</button></div></div>
-            <div class="quiz-result"><small>Your best fit</small><div class="result-name aurora-text" id="result-name">Signature</div><div class="result-price" id="result-price">$399 launch price</div><p class="result-reason" id="result-reason"></p><div class="result-actions"><a class="btn btn-primary" id="result-cta" href="#package-signature">See the Signature edition <span aria-hidden="true">→</span></a><button class="quiz-reset" type="button">Take it again</button></div></div>
+            <div class="quiz-result"><small>Your best fit</small><div class="result-name aurora-text" id="result-name">Signature</div><div class="result-price" id="result-price">$399 launch price</div><p class="result-reason" id="result-reason"></p><div class="result-actions"><a class="btn btn-primary" id="result-cta" href="#sample">Get a free sample <span aria-hidden="true">→</span></a><a class="result-edition" id="result-edition" href="#package-signature">See the Signature edition</a><button class="quiz-reset" type="button">Take it again</button></div></div>
           </div>
         </div>
       </div>
@@ -772,7 +779,7 @@
       <div class="wrap">
         <div class="sample-ticket">
           <div class="sample-copy"><div class="section-index" style="color:#ffd59a;margin-bottom:20px">A GOOD FIRST STEP</div><h2>See your idea before committing to the whole book.</h2><p>Start with a free story outline and one character likeness sketch. It is enough to see the direction, ask better questions, and decide whether the project feels right.</p></div>
-          <div class="sample-side"><strong>Your free starting sample</strong><p>One concise outline<br>One likeness sketch<br>No finished-book commitment</p><a class="btn" href="#preview-note">Start your sample <span aria-hidden="true">→</span></a><div class="concept-note" id="preview-note">BookVizion is currently a concept preview. Intake is not open yet; this shows the planned offer.</div></div>
+          <div class="sample-side"><strong>Your free starting sample</strong><p>One concise outline<br>One likeness sketch<br>No finished-book commitment</p><a class="btn" href="#preview-note">Get a free sample <span aria-hidden="true">→</span></a></div>
         </div>
         <div class="story-starter">
           <div class="starter-label"><small>Need a spark?</small><strong>Try a story starter.</strong></div>
@@ -1183,8 +1190,11 @@
         document.getElementById('result-price').textContent = data.price;
         document.getElementById('result-reason').textContent = data.reason;
         var cta = document.getElementById('result-cta');
-        cta.href = data.href;
-        cta.firstChild.nodeValue = data.cta + ' ';
+        cta.href = '#sample';
+        cta.firstChild.nodeValue = 'Get a free sample ';
+        var edition = document.getElementById('result-edition');
+        edition.href = data.href;
+        edition.textContent = data.cta;
         quizResult.classList.add('active');
         quizProgress.forEach(function(bar) { bar.classList.add('active'); });
       }
