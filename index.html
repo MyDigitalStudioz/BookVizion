@@ -433,7 +433,7 @@
     .cta-lead { display:flex; flex-wrap:wrap; align-items:center; gap:12px 16px; }
     .concept-note { margin:0; max-width:36ch; font-size:13px; line-height:1.45; color:var(--ink-soft); }
     .result-edition { color:var(--ink-soft); font-size:14px; font-weight:600; text-underline-offset:3px; }
-    .story-starter { display:grid; grid-template-columns:.72fr 1.28fr; margin-top:28px; background-color:var(--paper-strong); background-image:var(--card-gradient); border:1px solid var(--line-strong); box-shadow:var(--shadow-small); }
+    .story-starter { display:grid; grid-template-columns:.72fr 1.28fr; margin-top:16px; background-color:var(--paper-strong); background-image:var(--card-gradient); border:1px solid var(--line-strong); box-shadow:var(--shadow-small); }
     .starter-label { padding:28px 30px; border-right:1px solid var(--line); }
     .starter-label small { display:block; color:var(--red); font-size:10px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; margin-bottom:9px; }
     .starter-label strong { font:500 27px/1.05 var(--font-display); }
@@ -457,9 +457,10 @@
     .footer-meta { text-align:right; color:var(--ink-soft); font-size:12px; }
 
     @media (max-width: 900px) {
-      .hero { grid-template-columns:1fr; padding-top:55px; gap:35px; }
+      .hero { grid-template-columns:1fr; padding-top:28px; gap:18px; }
       .hero-copy { max-width:720px; }
-      .book-stage { min-height:520px; }
+      .book-stage { order:-1; min-height:320px; }
+      .book { width:min(250px, 58vw); }
       .section-head { grid-template-columns:1fr; gap:15px; }
       .steps { grid-template-columns:1fr 1fr; }
       .step:nth-child(2) { border-right:0; }
@@ -488,15 +489,15 @@
       .wordmark { font-size:23px; }
       .masthead-actions { display:flex; align-items:center; gap:8px; }
       .theme-toggle { padding:0; }
-      .hero { min-height:auto; padding:48px 0 72px; }
+      .hero { min-height:auto; padding:12px 0 48px; }
       .hero:before { right:-18vw; width:72%; height:55%; top:44%; }
-      h1 { font-size:49px; }
+      h1 { font-size:42px; margin-bottom:16px; }
       .hero-copy > p { font-size:17px; }
       .actions { flex-direction:column; align-items:stretch; }
       .cta-lead { flex-direction:column; align-items:stretch; width:100%; }
       .concept-note { max-width:none; }
       .btn { width:100%; }
-      .book-stage { min-height:450px; }
+      .book-stage { order:-1; min-height:250px; }
       .sun-disc { width:340px; height:340px; }
       .book { width:min(340px, 79vw); }
       .book-label { top:27%; left:-4%; width:74%; padding:11px 12px; font-size:11px; letter-spacing:1.4px; transform:rotate(-5deg); }
@@ -848,7 +849,7 @@
         </div>
         <div class="faq-list">
           <details open><summary><span class="qnum">01</span><span>Who owns the rights?</span></summary><p>You do. Your story and finished custom book remain yours. Any public use—such as a portfolio case study—would be handled with your permission.</p></details>
-          <details><summary><span class="qnum">02</span><span>How long does a book take?</span></summary><p>Timing depends on the length of the book, the condition of the source material, and how quickly approvals come back. A firm schedule would be agreed before production begins rather than promised as a one-size-fits-all turnaround.</p></details>
+          <details><summary><span class="qnum">02</span><span>How long does a book take?</span></summary><p>The timeline is set at kickoff. It depends on the length of the book, the condition of the source material, and how quickly approvals come back.</p></details>
           <details><summary><span class="qnum">03</span><span>How do revisions work?</span></summary><p>The approval gates define the scope. We approve the storyline before likeness work, likeness before full spreads, and spreads before print. Reopening an earlier approved stage can affect schedule and cost, so changes are handled where they belong.</p></details>
         </div>
       </div>
@@ -871,14 +872,17 @@
       var themeLabel = themeButton.querySelector('.theme-toggle-label');
       var themeMeta = document.querySelector('meta[name="theme-color"]');
 
-      themeButton.addEventListener('click', function () {
-        var dark = root.getAttribute('data-theme') !== 'dark';
+      function setTheme(dark) {
         if (dark) root.setAttribute('data-theme', 'dark');
         else root.removeAttribute('data-theme');
         themeButton.setAttribute('aria-checked', String(dark));
         themeButton.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
         themeLabel.textContent = dark ? 'Dark' : 'Light';
         themeMeta.setAttribute('content', dark ? '#141210' : '#f7f1e7');
+      }
+      setTheme(root.getAttribute('data-theme') === 'dark');
+      themeButton.addEventListener('click', function () {
+        setTheme(root.getAttribute('data-theme') !== 'dark');
       });
 
       var navToggle = document.querySelector('.nav-toggle');
