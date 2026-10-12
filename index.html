@@ -589,6 +589,19 @@
       html { scroll-behavior:auto; }
       *, *:before, *:after { transition:none !important; }
     }
+    /* copy-v2: risk reversal, tier strip, inquiry CTA */
+    .risk-block { margin-top:34px; padding:26px 28px; border:1px solid var(--line); border-left:3px solid var(--gold); background:var(--paper); box-shadow:var(--shadow-small); }
+    .risk-block h3 { font:500 clamp(26px,3vw,34px)/1.1 var(--font-display); margin:0 0 10px; color:var(--ink); }
+    .risk-block p { margin:4px 0; color:var(--ink-soft); font-size:16px; line-height:1.5; }
+    .tier-strip { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:34px; }
+    .tier-strip div { padding:14px 16px; border:1px solid var(--line); background:var(--paper); font-size:15px; line-height:1.4; color:var(--ink-soft); }
+    .tier-strip b { display:block; font:500 22px/1.1 var(--font-display); color:var(--ink); margin-bottom:4px; }
+    .tier-strip .is-recommended { background:color-mix(in srgb, var(--champagne) 28%, transparent); }
+    .compare td a { color:var(--ink); text-decoration:underline; text-underline-offset:3px; }
+    .more-stories { margin:40px 0 0; text-align:center; font:500 clamp(22px,2.6vw,30px)/1.2 var(--font-display); color:var(--ink); }
+    .footer-cta { padding:46px 0 10px; text-align:center; }
+    .footer-cta p { font:500 clamp(24px,3vw,34px)/1.2 var(--font-display); margin:0 0 18px; }
+    @media (max-width: 760px) { .tier-strip { grid-template-columns:1fr; } }
   </style>
 </head>
 <body>
@@ -603,6 +616,7 @@
         <a href="#story">Harlow's book</a>
         <a href="#packages">Packages</a>
         <a href="#faq">FAQ</a>
+        <a href="mailto:digitalstudioz822@gmail.com?subject=BookVizion%20inquiry">Ask about your book</a>
         <a class="mini-cta" href="#sample">Get a free sample</a>
       </nav>
       <button class="theme-toggle" id="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="Switch to dark theme">
@@ -621,7 +635,7 @@
         <div class="actions">
           <div class="cta-lead">
             <a class="btn btn-primary" href="#sample">Get a free sample <span aria-hidden="true">→</span></a>
-            <p class="concept-note" id="preview-note">BookVizion is currently a concept preview. Intake is not open yet; this shows the planned offer.</p>
+            <p class="concept-note" id="preview-note">Now taking inquiries. Start with a free sample spread.</p>
           </div>
           <a class="btn btn-secondary" href="#process">See how it works</a>
         </div>
@@ -652,6 +666,7 @@
           </div>
         </div>
       </div>
+      <div class="wrap"><p class="more-stories">More stories in progress. Yours could be next.</p></div>
     </section>
 
     <section class="transformation" id="transformation">
@@ -781,6 +796,7 @@
           <article class="price-card featured" id="package-signature"><div class="popular">Recommended</div><h3>Signature</h3><div class="price"><sup>$</sup>399</div><div class="short-rule"></div><ul><li>32 pages</li><li>14 illustrated spreads</li><li>2 hardcover copies</li><li>Digital edition</li><li>Guided approval process</li></ul><a class="btn btn-primary" href="#sample">Choose Signature</a></article>
           <article class="price-card" id="package-studio"><div class="popular">The fuller production</div><h3>Studio</h3><div class="price"><sup>$</sup>749</div><div class="short-rule"></div><ul><li>40 pages</li><li>18 illustrated spreads</li><li>4 hardcover copies</li><li>Read-aloud audio edition</li><li>Guided approval process</li></ul><a class="btn btn-secondary" href="#sample">Explore Studio</a></article>
         </div>
+        <div class="tier-strip" aria-label="Editions at a glance"><div><b>Spark</b>One beautiful copy, focused story</div><div class="is-recommended"><b>Signature</b>Hardcovers to share, plus digital</div><div><b>Studio</b>Biggest world, copies, read-aloud audio</div></div>
         <div class="compare-wrap">
           <table class="compare">
             <caption class="sr-only">Compare Spark, Signature, and Studio on spreads, copies, binding, digital, and audio</caption>
@@ -813,27 +829,28 @@
               </tr>
               <tr>
                 <th scope="row">Digital</th>
-                <td>Ask us</td>
+                <td><a href="mailto:digitalstudioz822@gmail.com?subject=BookVizion%20inquiry">Ask about adding it</a></td>
                 <td class="is-recommended">Digital edition</td>
-                <td>Ask us</td>
+                <td><a href="mailto:digitalstudioz822@gmail.com?subject=BookVizion%20inquiry">Ask us what's included</a></td>
               </tr>
               <tr>
                 <th scope="row">Audio</th>
-                <td>Ask us</td>
-                <td class="is-recommended">Ask us</td>
+                <td><a href="mailto:digitalstudioz822@gmail.com?subject=BookVizion%20inquiry">Ask about adding it</a></td>
+                <td class="is-recommended"><a href="mailto:digitalstudioz822@gmail.com?subject=BookVizion%20inquiry">Ask about adding it</a></td>
                 <td>Read-aloud audio edition</td>
               </tr>
             </tbody>
           </table>
         </div>
+        <div class="risk-block"><h3>See it before you pay.</h3><p>We start with a free sample spread from your story.</p><p>You get a proof before any payment.</p><p>And nothing goes to print until you've approved every spread.</p></div>
       </div>
     </section>
 
     <section class="sample" id="sample">
       <div class="wrap">
         <div class="sample-ticket">
-          <div class="sample-copy"><div class="section-index" style="color:#ffd59a;margin-bottom:20px">A GOOD FIRST STEP</div><h2>See your idea before committing to the whole book.</h2><p>Start with a free story outline and one character likeness sketch. It is enough to see the direction, ask better questions, and decide whether the project feels right.</p></div>
-          <div class="sample-side"><strong>Your free starting sample</strong><p>One concise outline<br>One likeness sketch<br>No finished-book commitment</p><a class="btn" href="#preview-note">Get a free sample <span aria-hidden="true">→</span></a></div>
+          <div class="sample-copy"><div class="section-index" style="color:#ffd59a;margin-bottom:20px">A GOOD FIRST STEP</div><h2>See your idea before committing to the whole book.</h2><p>Start with a free sample spread from your story. It is enough to see the direction, ask better questions, and decide whether the project feels right.</p></div>
+          <div class="sample-side"><strong>Your free starting sample</strong><p>One illustrated sample spread<br>From your own story<br>No finished-book commitment</p><a class="btn" href="mailto:digitalstudioz822@gmail.com?subject=BookVizion%20inquiry">Get a free sample <span aria-hidden="true">→</span></a></div>
         </div>
         <div class="story-starter">
           <div class="starter-label"><small>Need a spark?</small><strong>Try a story starter.</strong></div>
@@ -858,7 +875,8 @@
   </main>
 
   <footer>
-    <div class="wrap footer-row"><div class="footer-line">BookVizion — anything imagined, made <em>real.</em></div><div class="footer-meta">Custom illustrated books<br>Concept preview · Launch edition</div></div>
+    <div class="wrap footer-cta"><p>Have a story, a photo or just an idea? Tell us about it.</p><a class="btn btn-primary" href="mailto:digitalstudioz822@gmail.com?subject=BookVizion%20inquiry">Tell us about your book <span aria-hidden="true">→</span></a></div>
+    <div class="wrap footer-row"><div class="footer-line">BookVizion — anything imagined, made <em>real.</em></div><div class="footer-meta">Custom illustrated books<br>Now taking inquiries · Launch edition</div></div>
   </footer>
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
     <button class="lightbox-close" type="button" aria-label="Close image viewer">×</button>
