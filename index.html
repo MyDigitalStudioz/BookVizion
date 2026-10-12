@@ -430,8 +430,8 @@
     .sample-side strong { font:500 29px/1.1 var(--font-display); margin-bottom:14px; }
     .sample-side p { color:#f1d8cc; }
     .sample-side .btn { background:#fff6e8; color:#612018; border-color:#fff6e8; align-self:flex-start; box-shadow:6px 6px 0 #d2a054; }
-    .cta-lead { display:flex; flex-wrap:wrap; align-items:center; gap:12px 16px; }
-    .concept-note { margin:0; max-width:36ch; font-size:13px; line-height:1.45; color:var(--ink-soft); }
+    .cta-lead { display:flex; flex-wrap:nowrap; align-items:center; gap:12px 16px; }
+    .concept-note { margin:0; flex:1 1 12rem; min-width:0; max-width:36ch; font-size:13px; line-height:1.45; color:var(--ink-soft); }
     .result-edition { color:var(--ink-soft); font-size:14px; font-weight:600; text-underline-offset:3px; }
     .story-starter { display:grid; grid-template-columns:.72fr 1.28fr; margin-top:16px; background-color:var(--paper-strong); background-image:var(--card-gradient); border:1px solid var(--line-strong); box-shadow:var(--shadow-small); }
     .starter-label { padding:28px 30px; border-right:1px solid var(--line); }
@@ -460,7 +460,8 @@
       .hero { grid-template-columns:1fr; padding-top:28px; gap:18px; }
       .hero-copy { max-width:720px; }
       .book-stage { order:-1; min-height:320px; }
-      .book { width:min(250px, 58vw); }
+      .book { width:min(280px, 62vw); }
+      .book-label { top:30%; width:auto; max-width:92%; padding:8px 10px; font-size:11px; letter-spacing:1px; white-space:nowrap; }
       .section-head { grid-template-columns:1fr; gap:15px; }
       .steps { grid-template-columns:1fr 1fr; }
       .step:nth-child(2) { border-right:0; }
@@ -495,12 +496,12 @@
       .hero-copy > p { font-size:17px; }
       .actions { flex-direction:column; align-items:stretch; }
       .cta-lead { flex-direction:column; align-items:stretch; width:100%; }
-      .concept-note { max-width:none; }
+      .concept-note { flex:none; width:100%; max-width:none; }
       .btn { width:100%; }
       .book-stage { order:-1; min-height:250px; }
       .sun-disc { width:340px; height:340px; }
       .book { width:min(340px, 79vw); }
-      .book-label { top:27%; left:-4%; width:74%; padding:11px 12px; font-size:11px; letter-spacing:1.4px; transform:rotate(-5deg); }
+      .book-label { top:30%; left:-4%; width:auto; max-width:92%; padding:8px 10px; font-size:10px; letter-spacing:.08em; white-space:nowrap; transform:rotate(-5deg); }
       .book-stamp { right:-5px; bottom:31px; width:90px; font-size:8px; }
       .seal-paw { width:17px; height:14px; }
       section { padding:78px 0; }
