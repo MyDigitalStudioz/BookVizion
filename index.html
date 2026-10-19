@@ -622,6 +622,68 @@
       html { scroll-behavior:auto; }
       *, *:before, *:after { transition:none !important; }
     }
+  
+    /* v6 image pass: House Styles stage, Harlow style row, Books we've made */
+    .concept-tag { display:inline-block; font:600 11px/1 var(--font-body); letter-spacing:.12em; text-transform:uppercase; color:color-mix(in srgb, var(--ink) 70%, transparent); background:var(--champagne); padding:6px 8px; }
+    :root[data-theme="dark"] .concept-tag { color:#1c1917; }
+    .house-styles { padding-top:94px; }
+    .hs-layout { display:grid; grid-template-columns:minmax(0,1.45fr) minmax(0,1fr); gap:28px; align-items:start; }
+    .hs-stage { order:-1; position:relative; aspect-ratio:4/3; background:var(--charcoal); border:1px solid var(--line-strong); box-shadow:2px 2px 0 var(--champagne); overflow:hidden; }
+    .hs-slide { position:absolute; inset:0; margin:0; opacity:0; transition:opacity 180ms ease; }
+    .hs-slide.is-active { opacity:1; z-index:1; }
+    .hs-slide img { width:100%; height:100%; object-fit:cover; display:block; }
+    .hs-slide figcaption { position:absolute; left:14px; top:14px; display:flex; gap:8px; align-items:center; }
+    .hs-caption { display:none; }
+    .hs-tabs { display:grid; gap:1px; background:var(--line); border:1px solid var(--line); }
+    .hs-tab { display:grid; grid-template-columns:64px 1fr; gap:14px; align-items:center; text-align:left; padding:12px 14px; background:var(--paper-strong); color:var(--ink); border:0; border-bottom:2px solid transparent; font:inherit; cursor:pointer; }
+    .hs-tab:hover { background:color-mix(in srgb, var(--champagne) 22%, var(--paper-strong)); }
+    .hs-tab:focus-visible { outline:2px solid var(--red); outline-offset:-2px; }
+    .hs-tab[aria-selected="true"] { background:var(--charcoal); color:#f6ebdc; border-bottom-color:var(--gold-soft); }
+    .hs-thumb { width:64px; height:48px; object-fit:cover; border:1px solid var(--line); }
+    .hs-tab-text strong { display:block; font:500 21px/1.15 var(--font-display); }
+    .hs-desc { display:block; font-size:14px; line-height:1.4; color:var(--ink-soft); margin-top:3px; }
+    .hs-best { display:block; font-size:12px; letter-spacing:.04em; color:var(--ink-soft); margin-top:4px; }
+    .hs-tab[aria-selected="true"] .hs-desc, .hs-tab[aria-selected="true"] .hs-best { color:#c8baaa; }
+    .style-row { margin-top:34px; }
+    .style-row-head { display:flex; flex-wrap:wrap; gap:6px 22px; align-items:baseline; margin-bottom:16px; }
+    .style-row-head h3 { font:500 clamp(24px,2.4vw,32px)/1.1 var(--font-display); margin:0; }
+    .style-row-head p { margin:0; color:var(--ink-soft); font-size:15px; }
+    .style-row-grid { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:14px; }
+    .style-tile figure { margin:0; position:relative; background:var(--paper-strong); border:1px solid var(--line-strong); box-shadow:2px 2px 0 var(--champagne); }
+    .style-tile img { display:block; width:100%; height:auto; aspect-ratio:1/1; object-fit:cover; }
+    .style-tile figcaption { padding:8px 9px 10px; display:grid; gap:6px; }
+    .style-tile .concept-tag { justify-self:start; font-size:10px; padding:5px 6px; }
+    .style-tile-name { font:500 16px/1.2 var(--font-display); font-style:italic; }
+    .books-made { padding-top:80px; }
+    .bwm-pair { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+    .bwm-card { background:var(--paper-strong); border:1px solid var(--line-strong); box-shadow:2px 2px 0 var(--champagne); }
+    .bwm-strip { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1px; background:var(--line); border-bottom:1px solid var(--line); }
+    .bwm-cell { margin:0; background:var(--paper-strong); }
+    .bwm-cell img { display:block; width:100%; aspect-ratio:1/1; height:auto; object-fit:cover; }
+    .bwm-cell figcaption { padding:7px 9px; font-size:11px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-soft); }
+    .bwm-copy { padding:20px 22px 24px; }
+    .bwm-copy h3 { font:500 26px/1.15 var(--font-display); margin:0 0 6px; }
+    .bwm-copy p { margin:0; color:var(--ink-soft); font-size:15px; }
+    @media (max-width: 900px) {
+      .hs-layout { grid-template-columns:1fr; gap:14px; }
+      .hs-tabs { order:-2; display:flex; gap:8px; overflow-x:auto; background:none; border:0; padding-bottom:4px; scrollbar-width:none; }
+      .hs-tabs::-webkit-scrollbar { display:none; }
+      .hs-tab { flex:0 0 auto; display:block; padding:10px 14px; min-height:44px; border:1px solid var(--line-strong); }
+      .hs-thumb, .hs-desc, .hs-best { display:none; }
+      .hs-tab-text strong { font:600 14px/1.2 var(--font-body); white-space:nowrap; }
+      .hs-stage { order:-1; aspect-ratio:auto; display:flex; overflow-x:auto; scroll-snap-type:x mandatory; background:none; border:0; box-shadow:none; gap:12px; scrollbar-width:none; }
+      .hs-stage::-webkit-scrollbar { display:none; }
+      .hs-slide { position:relative; inset:auto; opacity:1; flex:0 0 86%; scroll-snap-align:center; aspect-ratio:4/3; border:1px solid var(--line-strong); background:var(--charcoal); }
+      .bwm-pair { grid-template-columns:1fr; }
+    }
+    @media (max-width: 620px) {
+      .house-styles { padding-top:68px; }
+      .books-made { padding-top:60px; }
+      .style-row-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; }
+      .style-tile .concept-tag { font-size:9px; letter-spacing:.08em; padding:4px 5px; }
+      .style-tile-name { font-size:14px; }
+    }
+    @media (prefers-reduced-motion: reduce) { .hs-slide { transition:none; } }
   </style>
 </head>
 <body>
@@ -768,6 +830,33 @@
       </div>
     </section>
 
+    <section class="books-made" id="books-weve-made" aria-labelledby="books-made-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-index">BOOKS WE’VE MADE</div>
+          <div><h2 id="books-made-title">Real books, start to finish.</h2><p>Two finished books from our studio, shown as they were made.</p></div>
+        </div>
+        <div class="bwm-pair">
+          <article class="bwm-card">
+            <div class="bwm-strip">
+              <figure class="bwm-cell"><img src="https://raw.githubusercontent.com/MyDigitalStudioz/Harlows-Accidental-Journey/Harlows-v2/demo/real-harlow-photo.jpg" width="1206" height="1206" alt="Photograph of the real Harlow, a seal-point Ragdoll cat" loading="lazy" decoding="async" style="object-position:center" /><figcaption>The photo</figcaption></figure>
+              <figure class="bwm-cell"><img src="https://raw.githubusercontent.com/MyDigitalStudioz/Harlows-Accidental-Journey/main/characters/harlow-hero.png" width="1206" height="1206" alt="Harlow’s approved painted storybook portrait" loading="lazy" decoding="async" style="object-position:center" /><figcaption>The portrait</figcaption></figure>
+              <figure class="bwm-cell"><img src="assets/books-weve-made/web/harlow-spread-farmers-market-300.webp" srcset="assets/books-weve-made/web/harlow-spread-farmers-market-300.webp 300w, assets/books-weve-made/web/harlow-spread-farmers-market-600.webp 600w" sizes="(max-width: 620px) 30vw, 190px" width="600" height="300" alt="Finished spread from Harlow’s book: Lois holds a red apple at the farmers market with Harlow beside her" loading="lazy" decoding="async" style="object-position:42% center" /><figcaption>A finished spread</figcaption></figure>
+            </div>
+            <div class="bwm-copy"><h3>Harlow’s Accidental Journey</h3><p>Our first book, from a real cat to a printed story.</p></div>
+          </article>
+          <article class="bwm-card">
+            <div class="bwm-strip">
+              <figure class="bwm-cell"><img src="assets/books-weve-made/web/santa-front-cover-300.webp" srcset="assets/books-weve-made/web/santa-front-cover-300.webp 300w, assets/books-weve-made/web/santa-front-cover-600.webp 600w" sizes="(max-width: 620px) 30vw, 190px" width="600" height="620" alt="Front cover of The Night I Met Santa: a snowy house strung with lights under a full moon, with Santa’s sleigh crossing the sky" loading="lazy" decoding="async" style="object-position:center" /><figcaption>The cover</figcaption></figure>
+              <figure class="bwm-cell"><img src="assets/books-weve-made/web/santa-spread-eyes-met-300.webp" srcset="assets/books-weve-made/web/santa-spread-eyes-met-300.webp 300w, assets/books-weve-made/web/santa-spread-eyes-met-600.webp 600w" sizes="(max-width: 620px) 30vw, 190px" width="600" height="600" alt="Spread from The Night I Met Santa: Santa kneels by the tree and fireplace with his arms open, surrounded by gifts" loading="lazy" decoding="async" style="object-position:center" /><figcaption>A finished spread</figcaption></figure>
+              <figure class="bwm-cell"><img src="assets/books-weve-made/web/santa-spread-stocking-300.webp" srcset="assets/books-weve-made/web/santa-spread-stocking-300.webp 300w, assets/books-weve-made/web/santa-spread-stocking-600.webp 600w" sizes="(max-width: 620px) 30vw, 190px" width="600" height="600" alt="Spread from The Night I Met Santa: a boy in red pajamas reaches into a stocking by the fireplace on Christmas Eve" loading="lazy" decoding="async" style="object-position:center" /><figcaption>A finished spread</figcaption></figure>
+            </div>
+            <div class="bwm-copy"><h3>The Night I Met Santa</h3><p>A Christmas picture book, illustrated and laid out page by page.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="different" id="different">
       <div class="wrap">
         <div class="section-head">
@@ -820,6 +909,80 @@
               </div>
             </div>
           </article>
+        </div>
+        <div class="style-row" aria-labelledby="style-row-title">
+          <div class="style-row-head"><h3 id="style-row-title">Same portrait, other house styles.</h3><p>Harlow’s approved portrait, restyled as concept samples. His book itself stays in its original finish.</p></div>
+          <ul class="style-row-grid">
+            <li class="style-tile"><figure><img src="assets/concept-cast/final-12/tiles/harlow-watercolor-tile-300.webp" srcset="assets/concept-cast/final-12/tiles/harlow-watercolor-tile-300.webp 300w, assets/concept-cast/final-12/tiles/harlow-watercolor-tile-600.webp 600w" sizes="(max-width: 620px) 30vw, (max-width: 900px) 30vw, 180px" width="300" height="300" alt="Concept sample: Harlow, the seal-point Ragdoll cat, in the Watercolor style, with his blue eyes, dark mask and white bib kept from his approved portrait." loading="lazy" decoding="async" /><figcaption><span class="concept-tag">Concept sample</span><span class="style-tile-name">Watercolor</span></figcaption></figure></li>
+            <li class="style-tile"><figure><img src="assets/concept-cast/final-12/tiles/harlow-polished-cartoon-tile-300.webp" srcset="assets/concept-cast/final-12/tiles/harlow-polished-cartoon-tile-300.webp 300w, assets/concept-cast/final-12/tiles/harlow-polished-cartoon-tile-600.webp 600w" sizes="(max-width: 620px) 30vw, (max-width: 900px) 30vw, 180px" width="300" height="300" alt="Concept sample: Harlow, the seal-point Ragdoll cat, in the Polished Cartoon style, with his blue eyes, dark mask and white bib kept from his approved portrait." loading="lazy" decoding="async" /><figcaption><span class="concept-tag">Concept sample</span><span class="style-tile-name">Polished Cartoon</span></figcaption></figure></li>
+            <li class="style-tile"><figure><img src="assets/concept-cast/final-12/tiles/harlow-classic-storybook-tile-300.webp" srcset="assets/concept-cast/final-12/tiles/harlow-classic-storybook-tile-300.webp 300w, assets/concept-cast/final-12/tiles/harlow-classic-storybook-tile-600.webp 600w" sizes="(max-width: 620px) 30vw, (max-width: 900px) 30vw, 180px" width="300" height="300" alt="Concept sample: Harlow, the seal-point Ragdoll cat, in the Classic Storybook style, with his blue eyes, dark mask and white bib kept from his approved portrait." loading="lazy" decoding="async" /><figcaption><span class="concept-tag">Concept sample</span><span class="style-tile-name">Classic Storybook</span></figcaption></figure></li>
+            <li class="style-tile"><figure><img src="assets/concept-cast/final-12/tiles/harlow-bold-comic-tile-300.webp" srcset="assets/concept-cast/final-12/tiles/harlow-bold-comic-tile-300.webp 300w, assets/concept-cast/final-12/tiles/harlow-bold-comic-tile-600.webp 600w" sizes="(max-width: 620px) 30vw, (max-width: 900px) 30vw, 180px" width="300" height="300" alt="Concept sample: Harlow, the seal-point Ragdoll cat, in the Bold Comic style, with his blue eyes, dark mask and white bib kept from his approved portrait." loading="lazy" decoding="async" /><figcaption><span class="concept-tag">Concept sample</span><span class="style-tile-name">Bold Comic</span></figcaption></figure></li>
+            <li class="style-tile"><figure><img src="assets/concept-cast/final-12/tiles/harlow-3d-animated-tile-300.webp" srcset="assets/concept-cast/final-12/tiles/harlow-3d-animated-tile-300.webp 300w, assets/concept-cast/final-12/tiles/harlow-3d-animated-tile-600.webp 600w" sizes="(max-width: 620px) 30vw, (max-width: 900px) 30vw, 180px" width="300" height="300" alt="Concept sample: Harlow, the seal-point Ragdoll cat, in the 3D Animated style, with his blue eyes, dark mask and white bib kept from his approved portrait." loading="lazy" decoding="async" /><figcaption><span class="concept-tag">Concept sample</span><span class="style-tile-name">3D Animated</span></figcaption></figure></li>
+            <li class="style-tile"><figure><img src="assets/concept-cast/final-12/tiles/harlow-semi-real-tile-300.webp" srcset="assets/concept-cast/final-12/tiles/harlow-semi-real-tile-300.webp 300w, assets/concept-cast/final-12/tiles/harlow-semi-real-tile-600.webp 600w" sizes="(max-width: 620px) 30vw, (max-width: 900px) 30vw, 180px" width="300" height="300" alt="Concept sample: Harlow, the seal-point Ragdoll cat, in the Semi-Real Painterly style, with his blue eyes, dark mask and white bib kept from his approved portrait." loading="lazy" decoding="async" /><figcaption><span class="concept-tag">Concept sample</span><span class="style-tile-name">Semi-Real Painterly</span></figcaption></figure></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="house-styles" id="house-styles" aria-labelledby="house-styles-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-index">HOUSE STYLES</div>
+          <div><h2 id="house-styles-title">One scene, six house styles.</h2><p>Maya and Biscuit are characters we invented for these style studies, so every version is a concept sample made in-house. Your book gets one style, chosen and locked with you before the first spread is painted.</p></div>
+        </div>
+        <div class="hs-layout">
+          <div class="hs-tabs" role="tablist" aria-label="House styles">
+            <button class="hs-tab" type="button" role="tab" id="hs-tab-watercolor" aria-controls="hs-panel-watercolor" aria-selected="true" tabindex="0" data-index="0">
+              <img class="hs-thumb" src="assets/concept-cast/final-12/scenes/scene-watercolor-300.webp" alt="" width="64" height="48" loading="lazy" decoding="async" />
+              <span class="hs-tab-text"><strong>Watercolor</strong><span class="hs-desc">Soft transparent washes on warm paper.</span><span class="hs-best">Best for: Bedtime and tender, quiet stories.</span></span>
+            </button>
+            <button class="hs-tab" type="button" role="tab" id="hs-tab-polished-cartoon" aria-controls="hs-panel-polished-cartoon" aria-selected="false" tabindex="-1" data-index="1">
+              <img class="hs-thumb" src="assets/concept-cast/final-12/scenes/scene-polished-cartoon-300.webp" alt="" width="64" height="48" loading="lazy" decoding="async" />
+              <span class="hs-tab-text"><strong>Polished Cartoon</strong><span class="hs-desc">Our house finish: rounded, warm and dimensional.</span><span class="hs-best">Best for: Most family stories. Harlow’s book uses it.</span></span>
+            </button>
+            <button class="hs-tab" type="button" role="tab" id="hs-tab-classic-storybook" aria-controls="hs-panel-classic-storybook" aria-selected="false" tabindex="-1" data-index="2">
+              <img class="hs-thumb" src="assets/concept-cast/final-12/scenes/scene-classic-storybook-300.webp" alt="" width="64" height="48" loading="lazy" decoding="async" />
+              <span class="hs-tab-text"><strong>Classic Storybook</strong><span class="hs-desc">Opaque gouache in the mid-century picture-book tradition.</span><span class="hs-best">Best for: Timeless keepsakes.</span></span>
+            </button>
+            <button class="hs-tab" type="button" role="tab" id="hs-tab-bold-comic" aria-controls="hs-panel-bold-comic" aria-selected="false" tabindex="-1" data-index="3">
+              <img class="hs-thumb" src="assets/concept-cast/final-12/scenes/scene-bold-comic-300.webp" alt="" width="64" height="48" loading="lazy" decoding="async" />
+              <span class="hs-tab-text"><strong>Bold Comic</strong><span class="hs-desc">Clean ink lines and bright, flat color.</span><span class="hs-best">Best for: Big adventures and high energy.</span></span>
+            </button>
+            <button class="hs-tab" type="button" role="tab" id="hs-tab-3d-animated" aria-controls="hs-panel-3d-animated" aria-selected="false" tabindex="-1" data-index="4">
+              <img class="hs-thumb" src="assets/concept-cast/final-12/scenes/scene-3d-animated-300.webp" alt="" width="64" height="48" loading="lazy" decoding="async" />
+              <span class="hs-tab-text"><strong>3D Animated</strong><span class="hs-desc">Soft rounded forms with a film-like glow.</span><span class="hs-best">Best for: Kids who love animated movies.</span></span>
+            </button>
+            <button class="hs-tab" type="button" role="tab" id="hs-tab-semi-real" aria-controls="hs-panel-semi-real" aria-selected="false" tabindex="-1" data-index="5">
+              <img class="hs-thumb" src="assets/concept-cast/final-12/scenes/scene-semi-real-300.webp" alt="" width="64" height="48" loading="lazy" decoding="async" />
+              <span class="hs-tab-text"><strong>Semi-Real Painterly</strong><span class="hs-desc">Visible brushwork with lifelike proportions.</span><span class="hs-best">Best for: Heirloom gifts and grown-up readers.</span></span>
+            </button>
+          </div>
+          <div class="hs-stage" tabindex="-1">
+            <figure class="hs-slide is-active" role="tabpanel" id="hs-panel-watercolor" aria-labelledby="hs-tab-watercolor" data-index="0">
+              <img src="assets/concept-cast/final-12/scenes/scene-watercolor-600.webp" srcset="assets/concept-cast/final-12/scenes/scene-watercolor-300.webp 300w, assets/concept-cast/final-12/scenes/scene-watercolor-600.webp 600w" sizes="(max-width: 900px) 86vw, 640px" width="600" height="450" alt="Concept sample: Maya, a young girl in a yellow raincoat, smiles at Biscuit, her orange tabby cat, as they sit on a wooden garden step at dusk with a book open in her lap, painted in the Watercolor style." loading="eager" decoding="async" />
+              <figcaption><span class="concept-tag">Concept sample</span><span class="hs-caption">Watercolor</span></figcaption>
+            </figure>
+            <figure class="hs-slide" role="tabpanel" id="hs-panel-polished-cartoon" aria-labelledby="hs-tab-polished-cartoon" data-index="1">
+              <img src="assets/concept-cast/final-12/scenes/scene-polished-cartoon-600.webp" srcset="assets/concept-cast/final-12/scenes/scene-polished-cartoon-300.webp 300w, assets/concept-cast/final-12/scenes/scene-polished-cartoon-600.webp 600w" sizes="(max-width: 900px) 86vw, 640px" width="600" height="450" alt="Concept sample: Maya, a young girl in a yellow raincoat, smiles at Biscuit, her orange tabby cat, as they sit on a wooden garden step at dusk with a book open in her lap, painted in the Polished Cartoon style." loading="lazy" decoding="async" />
+              <figcaption><span class="concept-tag">Concept sample</span><span class="hs-caption">Polished Cartoon</span></figcaption>
+            </figure>
+            <figure class="hs-slide" role="tabpanel" id="hs-panel-classic-storybook" aria-labelledby="hs-tab-classic-storybook" data-index="2">
+              <img src="assets/concept-cast/final-12/scenes/scene-classic-storybook-600.webp" srcset="assets/concept-cast/final-12/scenes/scene-classic-storybook-300.webp 300w, assets/concept-cast/final-12/scenes/scene-classic-storybook-600.webp 600w" sizes="(max-width: 900px) 86vw, 640px" width="600" height="450" alt="Concept sample: Maya, a young girl in a yellow raincoat, smiles at Biscuit, her orange tabby cat, as they sit on a wooden garden step at dusk with a book open in her lap, painted in the Classic Storybook style." loading="lazy" decoding="async" />
+              <figcaption><span class="concept-tag">Concept sample</span><span class="hs-caption">Classic Storybook</span></figcaption>
+            </figure>
+            <figure class="hs-slide" role="tabpanel" id="hs-panel-bold-comic" aria-labelledby="hs-tab-bold-comic" data-index="3">
+              <img src="assets/concept-cast/final-12/scenes/scene-bold-comic-600.webp" srcset="assets/concept-cast/final-12/scenes/scene-bold-comic-300.webp 300w, assets/concept-cast/final-12/scenes/scene-bold-comic-600.webp 600w" sizes="(max-width: 900px) 86vw, 640px" width="600" height="450" alt="Concept sample: Maya, a young girl in a yellow raincoat, smiles at Biscuit, her orange tabby cat, as they sit on a wooden garden step at dusk with a book open in her lap, painted in the Bold Comic style." loading="lazy" decoding="async" />
+              <figcaption><span class="concept-tag">Concept sample</span><span class="hs-caption">Bold Comic</span></figcaption>
+            </figure>
+            <figure class="hs-slide" role="tabpanel" id="hs-panel-3d-animated" aria-labelledby="hs-tab-3d-animated" data-index="4">
+              <img src="assets/concept-cast/final-12/scenes/scene-3d-animated-600.webp" srcset="assets/concept-cast/final-12/scenes/scene-3d-animated-300.webp 300w, assets/concept-cast/final-12/scenes/scene-3d-animated-600.webp 600w" sizes="(max-width: 900px) 86vw, 640px" width="600" height="450" alt="Concept sample: Maya, a young girl in a yellow raincoat, smiles at Biscuit, her orange tabby cat, as they sit on a wooden garden step at dusk with a book open in her lap, painted in the 3D Animated style." loading="lazy" decoding="async" />
+              <figcaption><span class="concept-tag">Concept sample</span><span class="hs-caption">3D Animated</span></figcaption>
+            </figure>
+            <figure class="hs-slide" role="tabpanel" id="hs-panel-semi-real" aria-labelledby="hs-tab-semi-real" data-index="5">
+              <img src="assets/concept-cast/final-12/scenes/scene-semi-real-600.webp" srcset="assets/concept-cast/final-12/scenes/scene-semi-real-300.webp 300w, assets/concept-cast/final-12/scenes/scene-semi-real-600.webp 600w" sizes="(max-width: 900px) 86vw, 640px" width="600" height="450" alt="Concept sample: Maya, a young girl in a yellow raincoat, smiles at Biscuit, her orange tabby cat, as they sit on a wooden garden step at dusk with a book open in her lap, painted in the Semi-Real Painterly style." loading="lazy" decoding="async" />
+              <figcaption><span class="concept-tag">Concept sample</span><span class="hs-caption">Semi-Real Painterly</span></figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </section>
@@ -1250,6 +1413,45 @@
       document.querySelector('.quiz-reset').addEventListener('click', resetQuiz);
 
     }());
+  </script>
+
+  <script>
+  (function(){
+    var root=document.getElementById('house-styles'); if(!root) return;
+    var tabs=[].slice.call(root.querySelectorAll('.hs-tab'));
+    var slides=[].slice.call(root.querySelectorAll('.hs-slide'));
+    var stage=root.querySelector('.hs-stage');
+    var mq=window.matchMedia('(max-width: 900px)');
+    var lock=false;
+    function select(i,fromScroll){
+      tabs.forEach(function(t,j){ var on=j===i; t.setAttribute('aria-selected',on?'true':'false'); t.tabIndex=on?0:-1; });
+      slides.forEach(function(s,j){ s.classList.toggle('is-active', j===i); });
+      if(mq.matches){
+        tabs[i].scrollIntoView({block:'nearest',inline:'nearest'});
+        if(!fromScroll){ lock=true; stage.scrollTo({left:slides[i].offsetLeft-(stage.clientWidth-slides[i].clientWidth)/2, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}); setTimeout(function(){lock=false;},500); }
+      }
+    }
+    tabs.forEach(function(t,i){
+      t.addEventListener('click',function(){ select(i); });
+      t.addEventListener('keydown',function(e){
+        var n=null;
+        if(e.key==='ArrowRight'||e.key==='ArrowDown') n=(i+1)%tabs.length;
+        else if(e.key==='ArrowLeft'||e.key==='ArrowUp') n=(i-1+tabs.length)%tabs.length;
+        else if(e.key==='Home') n=0; else if(e.key==='End') n=tabs.length-1;
+        if(n!==null){ e.preventDefault(); select(n); tabs[n].focus(); }
+      });
+    });
+    var raf=null;
+    stage.addEventListener('scroll',function(){
+      if(!mq.matches||lock) return;
+      if(raf) cancelAnimationFrame(raf);
+      raf=requestAnimationFrame(function(){
+        var c=stage.scrollLeft+stage.clientWidth/2, best=0, bd=1e9;
+        slides.forEach(function(s,j){ var d=Math.abs(s.offsetLeft+s.clientWidth/2-c); if(d<bd){bd=d;best=j;} });
+        if(tabs[best].getAttribute('aria-selected')!=='true') select(best,true);
+      });
+    },{passive:true});
+  })();
   </script>
 </body>
 </html>
