@@ -71,8 +71,8 @@ Classic painted-gouache storybook illustration in the warm mid-century picture-b
 
 BANKED ANCHORS (first passing test per kit = that kit's reference anchors):
 - Kit A Watercolor — harlow-test-watercolor-master-v4 (md5 078f957c895a0de0df2c93b4a169d2f1); v5 colour repair in round 4 supersedes on Folio's pass.
-- Kit B Polished Cartoon (CONTROL) — the canonical portrait export, harlow-test-polished-cartoon-master-v3 (md5 2c353b2d534310cda089d72f3bcfa0ef).
-- Kit C 3D Animated — reworked 2026-10-18 (bib/mask lock above); fresh test in round 4 decides whether the kit stays.
-- Kit D Classic Storybook — PASS 2026-10-18: harlow-test-classic-storybook-master-v4 (md5 285c4c6098906569832b65e04dcbb3fd), tile md5 3c6693ac38ce2bd209e9fa8cd9843f16.
-- Kit E Bold Comic — PASS 2026-10-18: harlow-test-bold-comic-master-v4 (md5 4ff9fed012d670c8db67116aba801005), tile md5 b796d4a2622aaffe383244ce73fddb78.
-- Kit F Semi-Real Painterly — PASS (round 2, plate v4): harlow-test-semi-real-master-v4 (md5 e303072c21e12174342200f749b85a42).
+- Polished Cartoon (CONTROL — the house cast finish itself, not a lettered kit) — the canonical portrait export, harlow-test-polished-cartoon-master-v3 (md5 2c353b2d534310cda089d72f3bcfa0ef).
+- Kit C 3D Animated — reworked 2026-10-18 (bib/mask lock above); fresh test v5 (master md5 993e6f8822b74dbdcad78704ae368350, tile md5 e5cc42472d546989ae09a4ca12e0a858). STATUS: OK TO USE, kept by Jon's override (Folio's strict FAIL stays on record, round 4). If the tile ever displays larger than ~300px, one local touch-up darkens the left eye's white ring first.
+- Kit E Classic Storybook — PASS 2026-10-18: harlow-test-classic-storybook-master-v4 (md5 285c4c6098906569832b65e04dcbb3fd), tile md5 3c6693ac38ce2bd209e9fa8cd9843f16.
+- Kit B Bold Comic — PASS 2026-10-18: harlow-test-bold-comic-master-v4 (md5 4ff9fed012d670c8db67116aba801005), tile md5 b796d4a2622aaffe383244ce73fddb78.
+- Kit D Semi-Real Painterly — PASS (round 2, plate v4): harlow-test-semi-real-master-v4 (md5 e303072c21e12174342200f749b85a42).
