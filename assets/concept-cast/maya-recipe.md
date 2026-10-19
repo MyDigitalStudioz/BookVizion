@@ -34,3 +34,5 @@ NEVER CHANGE: Invented 7-year-old girl identity; warm brown skin; dark brown eye
 
 BANKED FILE: assets/concept-cast/maya-reference-portrait.png (+ maya-face-closeup.png) in the BookVizion repo (bookvizion-v6 branch). Portrait md5 e03d441b0e1f1430af0471bba7e1d80f.
 VERSION NOTE: v1 banked 2026-10-18, Trinity render from this recipe; Folio gate verdict on the reference set pending at bank time. Two nits flagged for the gate: Maya reads young (head proportion) and shows five clear red stripes vs the six in this spec; Biscuit reads young-adult. Neither was re-rolled — repair-don't-re-roll; Folio rules.
+
+VERSION NOTE v2 (2026-10-18): repair pass 1 of 2 (Folio's gate: age cues only) — longer face, less cheek fullness, head ~10-15% smaller relative to body, two clear upper front teeth with the gap; coat nudged toward mustard per Folio's flag. Banked: assets/concept-cast/maya-reference-portrait-v2.png + maya-face-closeup-v2.png (re-cut from v2). Awaiting Folio re-gate; v1 stays banked as history.
