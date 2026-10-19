@@ -32,7 +32,9 @@ Reusable render prompt: Definitive solo hero portrait of Maya, an invented 7-yea
 
 NEVER CHANGE: Invented 7-year-old girl identity; warm brown skin; dark brown eyes; two curly hair puffs with yellow ties; gap-tooth smile; mustard-yellow hooded raincoat worn OPEN with the hood DOWN; cream tee with six red stripes; dark indigo jeans; red rain boots; average child build; warm delighted expression; polished storybook cast finish (in the reference portrait); no extra accessories or props beyond the open picture book.
 
-BANKED FILE: assets/concept-cast/maya-reference-portrait.png (+ maya-face-closeup.png) in the BookVizion repo (bookvizion-v6 branch). Portrait md5 e03d441b0e1f1430af0471bba7e1d80f.
+BANKED FILE: assets/concept-cast/maya-reference-portrait-v3.png (+ maya-face-closeup-v3.png) in the BookVizion repo (bookvizion-v6 branch). Portrait md5 14613517a98148beec75be8f6fa37281.
 VERSION NOTE: v1 banked 2026-10-18, Trinity render from this recipe; Folio gate verdict on the reference set pending at bank time. Two nits flagged for the gate: Maya reads young (head proportion) and shows five clear red stripes vs the six in this spec; Biscuit reads young-adult. Neither was re-rolled — repair-don't-re-roll; Folio rules.
 
 VERSION NOTE v2 (2026-10-18): repair pass 1 of 2 (Folio's gate: age cues only) — longer face, less cheek fullness, head ~10-15% smaller relative to body, two clear upper front teeth with the gap; coat nudged toward mustard per Folio's flag. Banked: assets/concept-cast/maya-reference-portrait-v2.png + maya-face-closeup-v2.png (re-cut from v2). Awaiting Folio re-gate; v1 stays banked as history.
+
+VERSION NOTE v3 (2026-10-18): repair pass 2 of 2 (final, Folio's scope) — head 6-8% smaller again, lower face 8-10% longer, shins and forearms slightly longer. Banked as v3; BANKED FILE now points here per Folio §7. If v3 still does not read about 7, this recipe goes back for rework — no third pass.
