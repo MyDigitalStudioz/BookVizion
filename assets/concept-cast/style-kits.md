@@ -41,6 +41,9 @@ Soft 3D animated-film render in the modern family-animation style. Rounded, appe
 
 **Finish rules:** Every surface passes the touch test — it should look soft enough to hug. Fur and hair read as sculpted masses with painted-in detail, not simulation. The likeness test for this kit runs FIRST among the style tests (with Semi-Real Painterly) per Ravyn A3, because stylization drift is likeliest here: face shape, puff shape, and the cat's markings must match the reference portraits exactly before the kit is approved.
 
+
+KIT C LOCK (2026-10-18, Jon's call — part of the kit text itself): Harlow's WHITE BIB (the white chest, throat and blaze, full and bright) and his DARK MASK (seal-brown mask, ears, legs and tail, fully dark and saturated) are LOCKED MARKINGS in this kit. The 3D finish never washes the mask pale, never shrinks or dulls the bib, and the blue iris fills the eye opening with no visible white sclera.
+
 ## Kit D — Semi-Real Painterly
 
 **Master style block (attach verbatim):**
@@ -64,3 +67,12 @@ Classic painted-gouache storybook illustration in the warm mid-century picture-b
 **Palette notes:** Warm mid-century storybook palette: brick red, mustard ochre, sage and moss greens, dusty teal, warm cream paper, umber shadows. Colors feel printed, slightly ink-muted, never screen-bright. For the dusk scene, the sky goes dusty deep teal with cream-warm light on the subjects — the string lights are plain warm round bulbs on a wire, backyard-fair style, reading as garden lighting only, never holiday decoration.
 
 **Finish rules:** Gouache texture and dry-brush edges visible throughout; contours are painted, not inked. Silhouettes must read clearly at thumbnail size. Identity anchors stay exact under the simplification. Any render that drifts toward a holiday mood — through palette, props, or lighting ornaments — fails this kit outright, whatever its other merits.
+
+
+BANKED ANCHORS (first passing test per kit = that kit's reference anchors):
+- Kit A Watercolor — harlow-test-watercolor-master-v4 (md5 078f957c895a0de0df2c93b4a169d2f1); v5 colour repair in round 4 supersedes on Folio's pass.
+- Kit B Polished Cartoon (CONTROL) — the canonical portrait export, harlow-test-polished-cartoon-master-v3 (md5 2c353b2d534310cda089d72f3bcfa0ef).
+- Kit C 3D Animated — reworked 2026-10-18 (bib/mask lock above); fresh test in round 4 decides whether the kit stays.
+- Kit D Classic Storybook — PASS 2026-10-18: harlow-test-classic-storybook-master-v4 (md5 285c4c6098906569832b65e04dcbb3fd), tile md5 3c6693ac38ce2bd209e9fa8cd9843f16.
+- Kit E Bold Comic — PASS 2026-10-18: harlow-test-bold-comic-master-v4 (md5 4ff9fed012d670c8db67116aba801005), tile md5 b796d4a2622aaffe383244ce73fddb78.
+- Kit F Semi-Real Painterly — PASS (round 2, plate v4): harlow-test-semi-real-master-v4 (md5 e303072c21e12174342200f749b85a42).
