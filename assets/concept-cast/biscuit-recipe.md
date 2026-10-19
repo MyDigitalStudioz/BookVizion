@@ -36,3 +36,5 @@ BANKED FILE: assets/concept-cast/biscuit-reference-portrait.png (+ biscuit-face-
 VERSION NOTE: v1 banked 2026-10-18, Trinity render from this recipe; Folio gate verdict on the reference set pending at bank time. Two nits flagged for the gate: Maya reads young (head proportion) and shows five clear red stripes vs the six in this spec; Biscuit reads young-adult. Neither was re-rolled — repair-don't-re-roll; Folio rules.
 
 VERSION NOTE (2026-10-18): Biscuit PASSED with the young-adult nit standing (Folio's verdict on Biscuit; the reference set as a whole was REPAIR on Maya). Standing notes for all future Biscuit renders: (1) collar is a PLAIN leaf-green band — no leaf-vein pattern; (2) whiskers must be VISIBLE. Fold both into the identity text of every Biscuit brief from here on.
+
+STANDING BRIEF WORDING (2026-10-18, Folio): every Biscuit brief calls him a SMALL ADULT cat — never a kitten — and his collar a PLAIN BAND (smooth leaf-green band, no leaf pattern, no veins).
