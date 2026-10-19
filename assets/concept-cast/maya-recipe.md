@@ -32,9 +32,22 @@ Reusable render prompt: Definitive solo hero portrait of Maya, an invented 7-yea
 
 NEVER CHANGE: Invented 7-year-old girl identity; warm brown skin; dark brown eyes; two curly hair puffs with yellow ties; gap-tooth smile; mustard-yellow hooded raincoat worn OPEN with the hood DOWN; cream tee with six red stripes; dark indigo jeans; red rain boots; average child build; warm delighted expression; polished storybook cast finish (in the reference portrait); no extra accessories or props beyond the open picture book.
 
-BANKED FILE: assets/concept-cast/maya-reference-portrait-v3.png (+ maya-face-closeup-v3.png) in the BookVizion repo (bookvizion-v6 branch). Portrait md5 14613517a98148beec75be8f6fa37281.
+BANKED FILE: assets/concept-cast/maya-reference-portrait-v4.png (+ maya-face-closeup-v4.png) in the BookVizion repo (bookvizion-v6 branch). Portrait md5 6d7d9fa2c956a48be145fbd841432497.
 VERSION NOTE: v1 banked 2026-10-18, Trinity render from this recipe; Folio gate verdict on the reference set pending at bank time. Two nits flagged for the gate: Maya reads young (head proportion) and shows five clear red stripes vs the six in this spec; Biscuit reads young-adult. Neither was re-rolled — repair-don't-re-roll; Folio rules.
 
 VERSION NOTE v2 (2026-10-18): repair pass 1 of 2 (Folio's gate: age cues only) — longer face, less cheek fullness, head ~10-15% smaller relative to body, two clear upper front teeth with the gap; coat nudged toward mustard per Folio's flag. Banked: assets/concept-cast/maya-reference-portrait-v2.png + maya-face-closeup-v2.png (re-cut from v2). Awaiting Folio re-gate; v1 stays banked as history.
 
 VERSION NOTE v3 (2026-10-18): repair pass 2 of 2 (final, Folio's scope) — head 6-8% smaller again, lower face 8-10% longer, shins and forearms slightly longer. Banked as v3; BANKED FILE now points here per Folio §7. If v3 still does not read about 7, this recipe goes back for rework — no third pass.
+
+AGE IS A DIAL (added 2026-10-18, Folio's recipe rework — these settings GOVERN Maya's age read in every render):
+- face slightly longer than wide (hairline to chin about 1.1x cheek width)
+- lower face (nose base to chin) about one third of face height, with a small defined chin
+- a short visible neck between the chin and the collar
+- cheeks less full than v3
+- head with puffs about one third of seated-figure height (v3 measured 40%)
+- longer forearms and shins to suit a 7-year-old
+- keep the eyes, gap teeth, puffs and ties, skin tone, wardrobe, tee, book, pose, palette and finish
+
+VERSION NOTE v3 VERDICT (2026-10-18, Folio): RECIPE-REWORK. She reads about 5 to 6, not 7. Head MET (9% smaller than v2, 11.5% smaller than v1; head-to-seated-figure 40%). Lower face NOT MET (nose-to-chin 29% of face height vs v2's 30%; face length-to-width 1.03, unchanged — the face got smaller but kept the same shape; chin sits on the collar, neck hidden, cheeks full). Shins about 6% longer; forearms no visible change. Under the 2-pass cap there is no third pass on v3 — the recipe was reworked (AGE IS A DIAL, above) and a FRESH v4 anchor render goes through the step-1 gate.
+
+VERSION NOTE v4 (2026-10-18): FRESH anchor render from the reworked recipe (AGE IS A DIAL) — not an edit of v3. Submitted as a new step-1 gate. If Folio passes v4, it becomes the scene-set anchor and BANKED FILE stays here.
