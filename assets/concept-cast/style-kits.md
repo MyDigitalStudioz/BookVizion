@@ -70,7 +70,7 @@ Classic painted-gouache storybook illustration in the warm mid-century picture-b
 
 
 BANKED ANCHORS (first passing test per kit = that kit's reference anchors):
-- Kit A Watercolor — harlow-test-watercolor-master-v4 (md5 078f957c895a0de0df2c93b4a169d2f1); v5 colour repair in round 4 supersedes on Folio's pass.
+- Kit A Watercolor — PASS (round 4/5): harlow-test-watercolor-master-v5 (md5 ea98d17186801ba4d824dd6a4ea0a896), tile v6 (md5 468c2cc6a8532da982dde970b4a786bf). Tab test vs the Polished Cartoon control PASSES 3 of 4.
 - Polished Cartoon (CONTROL — the house cast finish itself, not a lettered kit) — the canonical portrait export, harlow-test-polished-cartoon-master-v3 (md5 2c353b2d534310cda089d72f3bcfa0ef).
 - Kit C 3D Animated — reworked 2026-10-18 (bib/mask lock above); fresh test v5 (master md5 993e6f8822b74dbdcad78704ae368350, tile md5 e5cc42472d546989ae09a4ca12e0a858). STATUS: OK TO USE, kept by Jon's override (Folio's strict FAIL stays on record, round 4). If the tile ever displays larger than ~300px, one local touch-up darkens the left eye's white ring first.
 - Kit E Classic Storybook — PASS 2026-10-18: harlow-test-classic-storybook-master-v4 (md5 285c4c6098906569832b65e04dcbb3fd), tile md5 3c6693ac38ce2bd209e9fa8cd9843f16.
