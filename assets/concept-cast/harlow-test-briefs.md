@@ -1,0 +1,24 @@
+# Harlow likeness-test briefs — v6 (written 2026-10-18, Trinity; Folio gates results)
+
+SHARED — both briefs:
+- Reference (attach FIRST): harlow-hero.png — Drive Character Art, the canonical hero portrait. File md5 b7455e6041831687b42af411043fa7f0. Size 1206x1206 (JPEG bytes under a .png name, the canonical set's known quirk). This same file SETS THE FULL-BODY POSE for the 2400 master: three-quarter sit, complete plume tail curled beside him, head up, gaze slightly up toward the viewer.
+- The real photo of Harlow is for identity checking only and is NEVER a base or starting image (not attached to renders).
+- IDENTITY (from the canonical recipe + portrait): Harlow is an adult MALE seal-point Ragdoll. Deep blue eyes, gently enlarged, with dark pupils and bright catchlights. White blaze running from the muzzle up between the eyes; white muzzle and chin; large clean white chest bib; both front paws white (white mitts); seal-brown points on ears, face mask edges, legs and tail; warm cream-brown body coat, long and silky, read as broad painted groups; full dark plume tail; soft pink nose; medium triangular ears with muted pink inners. Calm closed mouth, gentle proud expression.
+- T1 RULE (verbatim, every brief): "Harlow keeps his canonical facial proportions and gently enlarged eyes; the kit changes the finish only."
+- ADDENDUM SCOPE (2026-10-18, Jon — in the recipe file): this restyle is a marketing exception for the BookVizion v6 House Styles row ONLY. Finish exception only. Every restyle is labeled CONCEPT SAMPLE. The book, its spreads, and all book production remain on the canonical polished storybook cast finish, unchanged.
+- No lens blur, no bokeh, no depth of field in any style. Background: the portrait's light warm ivory wash, restyled per kit.
+- DELIVERABLES per style (Pixel Rev 2 + crop guide): (1) full-body master at 2400x2400, Harlow's head at least 20% of frame width, pose per the reference; (2) a 1:1 head-and-chest tile crop from that master.
+- Internal cap: at most 2 repair passes per test, then the kit goes back for rework.
+
+BRIEF 1 — KIT C, 3D ANIMATED:
+Attach order: harlow-hero.png -> this brief's identity text -> Kit C master block + negatives as TEXT ONLY.
+Kit C master block: "Soft 3D animated-film render in the modern family-animation style. Rounded, appealing forms with gentle stylization — never realistic anatomy. Skin and fur have a warm subsurface glow, as if light passes softly through them; fur is sculpted in soft grouped clumps, never individual strands. Eyes are large, glossy, and expressive with bright catchlights. Lighting is cinematic and soft: a warm key with cool ambient fill, gentle rim light separating the subjects from the background. Surfaces are matte and velvety, toy-like in their softness. This is an animated film frame, NEVER a photograph and never photoreal."
+Kit C negatives: "No photorealism, no photographic skin, no pores, no real-hair simulation, no individual fur strands. No uncanny-valley faces, no realistic proportions, no live-action look. No hard plastic or glossy vinyl surfaces, no video-game render look, no sharp ray-traced reflections. No recognizable studio character design or house look — no existing animation studio's faces, proportions, or styling. No lens blur, no bokeh, no depth of field. No text, logos, or watermark."
+Note: Kit C's "large eyes" does NOT override T1 — Harlow's eyes stay at his canonical gently-enlarged size and proportions.
+
+BRIEF 2 — KIT D, SEMI-REAL PAINTERLY:
+Attach order: harlow-hero.png -> this brief's identity text -> Kit D master block + negatives as TEXT ONLY.
+Kit D master block: "Painterly semi-real illustration — a real cat's anatomy and proportions, painted with visible, confident brushwork. Fur is built from broad painted clumps with clear directional strokes, detailed but never photographic. Eyes are painted, glossy, with natural feline structure and a bright catchlight — softly stylized, never photo-real eyes. Edges alternate: lost-and-found, with hard accents only at the focal points — the eyes and the blaze. Light is warm and directional, modelled in paint, with soft ambient occlusion in the fur valleys. The image must read unmistakably as a PAINTING: no photographic grain, no lens depth of field, no photographic detail."
+Kit D negatives: "No photorealism — no photographic fur strands, no photographic eyes, no photographic grain or skin detail. No photographic lighting, no lens blur, no bokeh, no depth of field. No hard airbrushed digital look, no smooth vector shading, no flat cartoon shapes. No full-cartoon proportions (no enlarged head, no chibi eyes). No text, logos, or watermark."
+Note: Kit D's "realistic anatomy" does NOT override T1 — Harlow's canonical facial proportions and gently enlarged eyes stay; only the painted finish changes.
+Judge this test at 110px wide, 168px wide, and 100%.
