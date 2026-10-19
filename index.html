@@ -134,7 +134,7 @@
     .book-cover img { width:100%; height:100%; object-fit:cover; }
     .book-cover:after { content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(13,10,8,.02), rgba(13,10,8,.1)); }
     .book-label {
-      position:absolute; top:6.5%; left:-8%; z-index:2; width:78%;
+      position:absolute; top:34.5%; left:-8%; z-index:2; width:78%;
       padding:14px 18px;
       background:linear-gradient(105deg, #ead5ad 0%, #f3e5cb 48%, #fffaf0 100%);
       color:#27221c; transform:rotate(-5deg);
@@ -429,11 +429,21 @@
     /* v6 copy pass: compare table, add-on strip, difference list, occasions */
     .compare-wrap { margin-top:44px; border:1px solid var(--line); background-color:var(--paper); background-image:var(--card-gradient); box-shadow:var(--shadow-small); overflow:hidden; }
     .compare-table { width:100%; border-collapse:collapse; font-size:14px; }
-    .compare-table th, .compare-table td { padding:13px 16px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
+    .compare-table th, .compare-table td { padding:17px 18px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
     .compare-table thead th { font:500 21px/1.1 var(--font-display); border-bottom:1px solid var(--line-strong); }
+    .compare-table .pkg-tag { display:block; margin-bottom:5px; font:700 10px/1 var(--font-body); letter-spacing:.18em; text-transform:uppercase; color:var(--gold); }
+    .compare-table .pkg-price { display:block; margin-top:5px; font:700 11px/1 var(--font-body); letter-spacing:.16em; color:var(--gold); }
     .compare-table tbody tr:last-child th, .compare-table tbody tr:last-child td { border-bottom:0; }
-    .compare-table tbody th { font-weight:600; color:var(--ink); white-space:nowrap; }
+    .compare-table tbody th { font-size:11.5px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; line-height:1.5; color:var(--ink); white-space:nowrap; }
+    .compare-table tbody th, .compare-table tbody td { border-bottom-color:color-mix(in srgb, var(--gold-soft) 38%, transparent); }
     .compare-table td { color:var(--ink-soft); }
+    .compare-table tbody tr:nth-child(even) { background:color-mix(in srgb, var(--champagne) 12%, transparent); }
+    .compare-table thead th:nth-child(3), .compare-table tbody td:nth-child(3) { background:color-mix(in srgb, var(--champagne) 30%, transparent); border-left:1px solid color-mix(in srgb, var(--gold) 55%, transparent); border-right:1px solid color-mix(in srgb, var(--gold) 55%, transparent); }
+    .compare-table td.num { font:500 17px/1.3 var(--font-display); color:var(--ink); }
+    .compare-table td.has:before { content:"✓"; margin-right:7px; font-weight:700; color:var(--gold); }
+    .compare-table td.no { color:color-mix(in srgb, var(--ink-soft) 55%, transparent); }
+    :root[data-theme="dark"] .compare-table tbody tr:nth-child(even) { background:color-mix(in srgb, var(--champagne) 6%, transparent); }
+    :root[data-theme="dark"] .compare-table thead th:nth-child(3), :root[data-theme="dark"] .compare-table tbody td:nth-child(3) { background:color-mix(in srgb, var(--champagne) 13%, transparent); }
     .addon-strip { margin-top:20px; padding:22px 26px; border:1px solid var(--line); background-color:var(--paper); background-image:var(--card-gradient); box-shadow:var(--shadow-small); }
     .addon-strip strong { display:block; font:500 24px/1.15 var(--font-display); margin-bottom:8px; }
     .addon-strip p { margin:0 0 8px; font-size:15px; color:var(--ink); }
@@ -452,8 +462,9 @@
     }
     @media (max-width: 620px) {
       .compare-table { font-size:12px; }
-      .compare-table th, .compare-table td { padding:10px 9px; }
+      .compare-table th, .compare-table td { padding:13px 10px; }
       .compare-table thead th { font-size:17px; }
+      .compare-table td.num { font-size:15px; }
       .compare-table tbody th { white-space:normal; }
       .addon-strip { padding:20px 20px; }
       .different-list li { padding:24px 22px 24px 44px; font-size:19px; }
@@ -514,7 +525,7 @@
       .book-stage { min-height:450px; }
       .sun-disc { width:340px; height:340px; }
       .book { width:min(340px, 79vw); }
-      .book-label { top:6.5%; left:-8%; width:78%; padding:11px 12px; font-size:11px; letter-spacing:1.7px; transform:rotate(-5deg); }
+      .book-label { top:33%; left:-8%; width:78%; padding:11px 12px; font-size:11px; letter-spacing:1.7px; transform:rotate(-5deg); }
       .book-stamp { right:-5px; bottom:31px; width:90px; font-size:8px; }
       .seal-paw { width:17px; height:14px; }
       section { padding:78px 0; }
@@ -688,17 +699,17 @@
         <div class="compare-wrap">
           <table class="compare-table">
             <caption class="sr-only">Compare the Spark, Signature, and Studio editions</caption>
-            <thead><tr><th scope="col"><span class="sr-only">Feature</span></th><th scope="col">Spark</th><th scope="col">Signature</th><th scope="col">Studio</th></tr></thead>
+            <thead><tr><th scope="col"><span class="sr-only">Feature</span></th><th scope="col">Spark<span class="pkg-price">$249</span></th><th scope="col"><span class="pkg-tag">Most chosen</span>Signature<span class="pkg-price">$399</span></th><th scope="col">Studio<span class="pkg-price">$749</span></th></tr></thead>
             <tbody>
-              <tr><th scope="row">Pages</th><td>32</td><td>32</td><td>40</td></tr>
-              <tr><th scope="row">Illustrated spreads</th><td>12</td><td>14</td><td>18</td></tr>
-              <tr><th scope="row">Printed copies</th><td>1 softcover</td><td>2 hardcover</td><td>4 hardcover</td></tr>
-              <tr><th scope="row">Digital edition</th><td>No</td><td>Print-ready PDF + private share link</td><td>Print-ready PDF + private share link</td></tr>
-              <tr><th scope="row">Print-ready PDF</th><td>No</td><td>Yes</td><td>Yes</td></tr>
-              <tr><th scope="row">Read-aloud audio edition</th><td>No</td><td>No</td><td>Yes</td></tr>
-              <tr><th scope="row">House art styles</th><td>All 6 included</td><td>All 6 included</td><td>All 6 included</td></tr>
-              <tr><th scope="row">Revision rounds</th><td>2 at every gate</td><td>2 at every gate</td><td>2 at every gate</td></tr>
-              <tr><th scope="row">Guided approval process</th><td>Included</td><td>Included</td><td>Included</td></tr>
+              <tr><th scope="row">Pages</th><td class="num">32</td><td class="num">32</td><td class="num">40</td></tr>
+              <tr><th scope="row">Illustrated spreads</th><td class="num">12</td><td class="num">14</td><td class="num">18</td></tr>
+              <tr><th scope="row">Printed copies</th><td class="num">1 softcover</td><td class="num">2 hardcover</td><td class="num">4 hardcover</td></tr>
+              <tr><th scope="row">Digital edition</th><td class="no"><span aria-hidden="true">—</span><span class="sr-only">No</span></td><td class="has">Print-ready PDF + private share link</td><td class="has">Print-ready PDF + private share link</td></tr>
+              <tr><th scope="row">Print-ready PDF</th><td class="no"><span aria-hidden="true">—</span><span class="sr-only">No</span></td><td class="has">Yes</td><td class="has">Yes</td></tr>
+              <tr><th scope="row">Read-aloud audio edition</th><td class="no"><span aria-hidden="true">—</span><span class="sr-only">No</span></td><td class="no"><span aria-hidden="true">—</span><span class="sr-only">No</span></td><td class="has">Yes</td></tr>
+              <tr><th scope="row">House art styles</th><td class="has">All 6 included</td><td class="has">All 6 included</td><td class="has">All 6 included</td></tr>
+              <tr><th scope="row">Revision rounds</th><td class="has">2 at every gate</td><td class="has">2 at every gate</td><td class="has">2 at every gate</td></tr>
+              <tr><th scope="row">Guided approval process</th><td class="has">Included</td><td class="has">Included</td><td class="has">Included</td></tr>
             </tbody>
           </table>
         </div>
