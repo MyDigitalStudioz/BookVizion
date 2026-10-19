@@ -17,3 +17,5 @@ Judging: every image must read as an illustration at tile size AND full size —
 Gate-and-bank: after the step-1 reference portraits pass, bank them (file + md5 into the recipes' BANKED FILE / VERSION NOTE) BEFORE any style test runs. Each kit's first passing test becomes that kit's reference anchor images.
 
 TILE DELIVERABLES (Jon/Pixel, 2026-10-18 — Pixel's Revision 2 at the end of the v6 shot list + "v6 Harlow full-body tile crop guide" in 01_INBOX govern): for EACH Harlow style, deliver two files: (1) the 2400x2400 full-body master, Harlow's head at least 20% of the frame width; (2) the 1:1 head-and-chest tile crop from that master, per Pixel's crop guide.
+
+LESSON (2026-10-18, Jon caught it): a background plate made by blurring the whole image carries a GHOST of the figure — blurred ear tips showed as faint ears in the new headroom band of the Polished Cartoon tile. Background plates must be FIGURE-FREE: build them by interpolating each row between the image's left/right edge background pixels (plus a light blur), never by blurring the figure itself. All six Harlow masters were rebuilt this way (v3 set; Polished Cartoon v2).
